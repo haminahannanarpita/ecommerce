@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="cupcake">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> StyleSphere</title>
+    <link rel="shortcut icon" href="./photo/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="final.css">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body onload='startTime()' class="container mx-auto">
+    <!-- heading part start -->
+     <header>
+        <!-- nav part start -->
+         <!-- nav logo part -->
+        <div><div class="navbar bg-base-100 ">
+            <div class="navbar-start">
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 6h16M4 12h8m-8 6h16" />
+                  </svg>
+                </div>
+                <ul
+                  tabindex="0"
+                  class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                  <li ><a>Home</a></li>
+                  <li>
+                    <a>Category</a>
+                    <ul class="p-2 z-50">
+                      <li><a>Shirt & pant</a></li>
+                      <li><a>Shoes</a></li>
+                      <li><a>Watch</a></li>
+                      <li><a>Beauty prodact</a></li>
+                      <li><a>Bag</a></li>
+
+                    </ul>
+                  </li>
+                  <li><a>Contact</a></li>
+                </ul>
+              </div>
+              
+              <a class="flex items-center justify-center text-xl"><img src="./photo/logo.png" alt="" class="h-[70px] w-[70px] pb-[3px]">StyleSphere</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1">
+                <li class="text-orange-600 font-bold"><a>Home</a></li>
+                <li>
+                  <details>
+                    <summary class="">Category</summary>
+                    <ul class="p-2 z-50">
+                        <li><a>Shirt & pant</a></li>
+                        <li><a>Shoes</a></li>
+                        <li><a>Watch</a></li>
+                        <li><a>Beauty prodact</a></li>
+                        <li><a>Bag</a></li>
+                    </ul>
+                  </details>
+                </li>
+                <li><a>Contact</a></li>
+              </ul>
+            </div>
+            
+            <div class="navbar-end">
+              <div id='clock'></div>
+              <div class="pr-2">
+                <i class="fa-solid fa-cart-shopping"></i>
+              </div>
+                <label class="input input-bordered flex items-center gap-2">
+                    <input type="text" class="grow" placeholder="Search" />
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 16 16"
+                      fill="currentColor"
+                      class="h-4 w-4 opacity-70">
+                      <path
+                        fill-rule="evenodd"
+                        d="M9.965 11.026a5 5 0 1 1 1.06-1.06l2.755 2.754a.75.75 0 1 1-1.06 1.06l-2.755-2.754ZM10.5 7a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Z"
+                        clip-rule="evenodd" />
+                    </svg>
+                  </label>
+            </div>
+          </div>
+        </div>
+        <!-- nav part  end -->
+
+         <!-- banner part start -->
+         <div class="hero bg-base-200 min-h-screen  ">
+            <div class="hero-content flex-col lg:flex-row-reverse gap-10">
+              <img id="fst-style"
+                src="./photo/banner.jpg.jpg"
+                class="max-w-sm rounded-lg shadow-2xl h-[400px] w-[300px] z-50" />
+                <img id="fst-style"
+                src="./photo/demo.jpg"
+                class="max-w-sm rounded-lg shadow-2xl h-[400px] w-[300px] z-50 " />
+                <img id="fst-style"
+                src="./photo/demo2.jpg"
+                class="max-w-sm rounded-lg shadow-2xl h-[400px] w-[300px] z-50" />
+
+
+              <div>
+                <h1 class="text-6xl font-bold "><SPan>Show</SPan> your <br> Personal <SPan>style</SPan></h1>
+                <h3 class="font-bold pt-5">NEW COLLECTION</h3>
+                <p class="py-6">
+                  Fowl saw a dry which a above together place. 
+                </p>
+                
+                <button class="btn btn-primary">New Collection</button>
+              </div>
+            </div>
+          </div>
+          <!-- banner part end -->
+
+
+          
+     </header>
+     <!-- heading part end -->
+
+     <!--main part start  -->
+     <main>
+        <!-- featured product section -->
+         <div>
+            <!-- heading div -->
+            <div class="title flex items-center justify-center">
+              <div class="flex w-[400px] flex-col ">
+                <div class="card  grid h-20 place-items-center">
+                  <h1 class="text-3xl font-bold">Featured Product</h1>
+                </div>
+                <div class="divider"></div>
+                <div class="card  grid h-20 place-items-center">
+                  <h1>Bring called seed first of third give itself now ment</h1>
+                </div>
+              </div>
+            </div>
+             <!-- card part start-->
+              <div class="flex flex-col lg:flex-row justify-center gap-10 py-10">
+                <!-- 1st shoes card -->
+                 <div class="h-[500px] bg-slate-200 rounded-box border-b-4 border-indigo-300">
+                    <div class="carousel carousel-vertical rounded-box h-96" id="card">
+                        
+                        <div class="carousel-item h-[500px] w-[400px]">
+                          <img id="fst-style" src="./photo/shoes3.jpg" />
+                        </div>
+                       
+    
+                      </div>
+                        <h3 class="text-2xl font-bold">LATEST SHOES</h3>
+                        <div class="flex justify-between">
+                            <h2 class="font-bold">$25.00</h2> <p class="line-through">$35.00</p>
+                          </div>
+                          <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg bg-green-500">Buy Now</button> 
+                 </div>
+               
+                  <!-- 1st end -->
+                   <!-- 2nd watch start -->
+                   <div class="h-[500px] bg-slate-200 rounded-box border-b-4 border-indigo-300">
+                    <div class="carousel carousel-vertical rounded-box h-96" id="card">
+                        
+                        <div class="carousel-item h-[500px] w-[400px]">
+                          <img id="fst-style" src="./photo/watch2.jpg" />
+                        </div>
+                        
+                      </div>
+                      <h3 class="text-2xl font-bold">LATEST WATCH</h3>
+                      <div class="flex justify-between">
+                        <h2 class="font-bold">$50.00</h2> <p class="line-through">$65.00</p>
+                      </div>
+
+                      <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg bg-green-500">Buy Now</button>
+                   </div>
+                    <!-- 2nd end -->
+
+                    <!-- 3rd bag start -->
+                     <div class="h-[500px] bg-slate-200 rounded-box border-b-4 border-indigo-300">
+                        <div class="carousel carousel-vertical rounded-box h-96" id="card">
+                            <div class="carousel-item h-[450px] w-[400px]">
+                              <img id="fst-style" src="./photo/bag1.jpg" />
+                            </div>
+                            
+                           
+                          </div>
+                          <h3 class="text-2xl font-bold">LATEST BAG</h3>
+                          <div class="flex justify-between">
+                            <h2 class="font-bold">$40.00</h2> <p class="line-through">$50.00</p>
+                          </div>
+                           <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg bg-green-500">Buy Now</button>
+
+                     </div>
+                   
+                     <!-- 3rd end -->
+              </div>
+              <!-- card part end -->
+         </div>
+          <!-- featured product secton end -->
+
+          <!-- discount part start -->
+           <div>
+            <div class="hero  mt-8">
+              <div class="carousel w-full">
+                <!-- 1st pic -->
+                <div id="slide1" class="carousel-item relative h-[500px] w-full bg-pink-200 flex justify-center  gap-36">
+                  <div class="title py-[30px]">
+                    <H3 class="text-2xl pt-10">ALL COLLECTION</H3>
+                    <h1 class="text-6xl font-bold py-6"><span class="off">30% OFF</span></h1>
+                    <button class="btn btn-primary bg-fuchsia-400">Discover now</button>
+                    <p class="py-6">
+                     LIMITED TIME OFFER
+                    </p>
+                  </div>
+                  <div class="image">
+                    <img class="h-[500px] w-[300px] pb-20 pl-[10px]" src="./photo/bag2-removebg-preview.png" alt="">
+                  </div>
+                  <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                    <a href="#slide4" class="btn btn-circle">❮</a>
+                    <a href="#slide2" class="btn btn-circle">❯</a>
+                  </div>
+                </div>
+                <!-- 2nd pic -->
+                <div id="slide2" class="carousel-item relative h-[500px] w-full bg-pink-200 flex justify-center  gap-36">
+                  <div class="title py-[30px]">
+                    <H3 class="text-2xl pt-10">ALL COLLECTION</H3>
+                    <h1 class="text-6xl font-bold py-6"><span class="off">30% OFF</span></h1>
+                    <button class="btn btn-primary bg-fuchsia-400">Discover now</button>
+                    <p class="py-6">
+                     LIMITED TIME OFFER
+                    </p>
+                  </div>
+                  <div class="image">
+                    <img class="h-[400px] w-[300px] pb-20 pl-[10px]" src="./photo/shoes2-removebg-preview.png" alt="">
+                  </div>
+                  <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                    <a href="#slide1" class="btn btn-circle">❮</a>
+                    <a href="#slide3" class="btn btn-circle">❯</a>
+                  </div>
+                  </div>
+                <!-- 3rd pic -->
+                <div id="slide3" class="carousel-item relative h-[500px] w-full bg-pink-200 flex justify-center  gap-36">
+                  <div class="title py-[30px]">
+                    <H3 class="text-2xl pt-10">ALL COLLECTION</H3>
+                    <h1 class="text-6xl font-bold py-6"><span class="off">30% OFF</span></h1>
+                    <button class="btn btn-primary bg-fuchsia-400">Discover now</button>
+                    <p class="py-6">
+                     LIMITED TIME OFFER
+                    </p>
+                  </div>
+                  <div class="image">
+                    <img class="h-[600px] w-[450px] pb-20 pl-[10px]" src="./photo/regular3.png" alt="">
+                  </div>
+                  <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                    <a href="#slide2" class="btn btn-circle">❮</a>
+                    <a href="#slide4" class="btn btn-circle">❯</a>
+                  </div>
+                  </div>
+                <!-- 4th pic -->
+                <div id="slide4" class="carousel-item relative h-[500px] w-full bg-pink-200 flex justify-center  gap-36">
+                  <div class="title py-[30px]">
+                    <H3 class="text-2xl pt-10">ALL COLLECTION</H3>
+                    <h1 class="text-6xl font-bold py-6"><span class="off">30% OFF</span></h1>
+                    <button class="btn btn-primary bg-fuchsia-400">Discover now</button>
+                    <p class="py-6">
+                     LIMITED TIME OFFER
+                    </p>
+                  </div>
+                  <div class="image">
+                    <img class="h-[500px] w-[300px] pb-20 pl-[10px]" src="./photo/mew2-lipstick.png" alt="">
+                  </div>
+                  <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                    <a href="#slide3" class="btn btn-circle">❮</a>
+                    <a href="#slide1" class="btn btn-circle">❯</a>
+                  </div>
+                <!-- pic end -->
+              </div>
+              <!-- discount part end -->
+
+                    
+                  </div>
+                </div>
+                </div>
+              
+
+           
+           
+           <!-- discount part end -->
+
+           <!-- new prodact start -->
+            <div class="">
+              <!-- new product titel -->
+              <div class="title flex items-center justify-center py-6">
+                <div class="flex w-[400px] flex-col ">
+                  <div class="card  grid h-20 place-items-center">
+                    <h1 class="text-3xl font-bold">New Product</h1>
+                  </div>
+                  <div class="divider"></div>
+                  
+                </div>
+              </div>
+              <!-- cards start -->
+              <div class="cards flex flex-col lg:flex-row justify-around gap-5 py-10">
+                <!-- fst img -->
+               <div class="left mt-[45px] ">
+                <div class="artboard phone-3 bg-amber-200 pt-[60px] rounded-lg">
+                  <img src="./photo/big2-removebg-preview.png" alt="" >
+                  <h2 class="font-bold text-3xl text-center pt-5">$120.70</h2>
+                  <div class="new">
+                    <button class="btn btn-active btn-secondary">ADD TO CART</button>
+                  </div>
+                  <div class="avatar">
+                    <div class="mask mask-hexagon w-24">
+                      <img src="./photo/NEW.webp" alt="" class="new-img">
+                    </div>
+                  </div>
+                </div>
+
+               </div>
+               <!-- second part -->
+                <div class="right flex flex-col lg:flex-row justify-around gap-5 py-10">
+                  <!-- inner 1st div start-->
+                  <div>
+                     <!-- 1st card -->
+                  <div class="card bg-base-100 w-96 shadow-xl">
+                    <figure>
+                      <img
+                        src="./photo/card1.jpg"
+                        alt="Shoes" class="h-[230px] w-full"/>
+                    </figure>
+                    <div class="card-body">
+                      <h2 class="card-title">
+                        Shoes!
+                        <div class="badge badge-secondary">NEW</div>
+                      </h2>
+                      <div class="flex flex-row">
+                        <p>New Latest Sneaker</p><p class="font-bold">20$</p>
+                      </div>
+                      <div class="card-actions justify-end">
+                        <div class="badge badge-outline">Fashion</div>
+                        <div class="badge badge-outline">Products</div>
+                      </div>
+                    </div>
+                  </div>
+                   <!-- 2nd card -->
+                   <div class="pt-2">
+                    <div class="card bg-base-100 w-96 shadow-xl">
+                      <figure>
+                        <img
+                          src="./photo/card2.jpg"
+                          alt="Shoes" class="h-[220px] w-full"/>
+                      </figure>
+                      <div class="card-body">
+                        <h2 class="card-title">
+                          Bag!
+                          <div class="badge badge-secondary">NEW</div>
+                        </h2>
+                        <div class="flex flex-row">
+                          <p>New Latest Sneaker</p><p class="font-bold">20$</p>
+                        </div>
+                        <div class="card-actions justify-end">
+                          <div class="badge badge-outline">Fashion</div>
+                          <div class="badge badge-outline">Products</div>
+                        </div>
+                      </div>
+                    </div>
+                   </div>
+                  </div>
+                   <!-- inner 1st div end -->
+
+                   <!-- inner 2nd div start -->
+                    <div>
+                      <!-- 3rd card -->
+                  <div class="card bg-base-100 w-96 shadow-xl ">
+                    <figure>
+                      <img
+                        src="./photo/card3.jpg"
+                        alt="Shoes" class="h-[230px] w-full"/>
+                    </figure>
+                    <div class="card-body">
+                      <h2 class="card-title">
+                        Lipstick!
+                        <div class="badge badge-secondary">NEW</div>
+                      </h2>
+                      <div class="flex flex-row">
+                        <p>New Latest Lipstick</p><p class="font-bold">20$</p>
+                      </div>
+                      <div class="card-actions justify-end">
+                        <div class="badge badge-outline">Fashion</div>
+                        <div class="badge badge-outline">Products</div>
+                      </div>
+                    </div>
+                  </div>
+                   <!-- 4th card -->
+                   <div class="pt-2">
+                    <div class="card bg-base-100 w-96 shadow-xl">
+                      <figure>
+                        <img
+                          src="./photo/card4.jpg"
+                          alt="bag" class="h-[220px] w-full">
+                      </figure>
+                      <div class="card-body">
+                        <h2 class="card-title">
+                         Eyeliner!
+                          <div class="badge badge-secondary">NEW</div>
+                        </h2>
+                        <div class="flex flex-row">
+                          <p>New Latest Eyeliner</p> <p class="font-bold">20$</p>
+                        </div>
+                        <div class="card-actions justify-end">
+                          <div class="badge badge-outline">Fashion</div>
+                          <div class="badge badge-outline">Products</div>
+                        </div>
+                      </div>
+                    </div>
+                   </div>
+
+                    </div>
+                    <!-- inner 2nd div end -->
+                  
+
+                </div>
+            </div>
+            <!-- new prodact end -->
+              </div>
+             <!-- cards end -->
+
+
+
+             <!-- regular product section start -->
+              <div>
+                <!-- regular section titel -->
+                <div class="title flex items-center justify-center py-6">
+                  <div class="flex w-[400px] flex-col ">
+                    <div class="card  grid h-20 place-items-center">
+                      <h1 class="text-3xl font-bold">Regular Product</h1>
+                    </div>
+                    <div class="divider"></div>
+                   
+                  </div>
+                </div>
+                 <!-- regular section titel end -->
+
+                
+              <!-- regular section mother div -->
+               <div class="flex flex-col lg:flex-row justify-around gap-5 py-10">
+                <!-- 1 part div start -->
+                 
+                 <div>
+                   <!-- regular 1st img start-->
+                   <div class="h-[300px] w-[300px] bg-green-100 rounded-full" id="reg">
+                    <img src="./photo/mew2-lipstick.png" alt="" class="h-[250px] w-[250px] pl-5 hover:scale-150">
+                    <h2 class="font-bold text-center">Lipstick</h2>
+                   </div>
+                   
+                   <!-- regular 1st img end -->
+                   <!--regular 2nd img start  -->
+                   <div class="h-[300px] w-[300px] bg-sky-100 rounded-full mt-5"id="reg">
+                    <img src="./photo/watch1-removebg-preview.png" alt="" class="h-[250px] w-[250px] pl-5 pb-[40px] hover:scale-150">
+                    <h2 class="font-bold text-center">WATCH</h2>
+                   </div>
+                   <!--regular 2nd img end -->
+                 </div>
+                  <div>
+                     <!-- regular 3rd img start -->
+                   <div class="h-[300px] w-[300px] bg-red-100 rounded-full"id="reg">
+                    <img src="./photo/girl-dress.png" alt="" class="h-[220px] w-[230px] pl-10 pt-3 hover:scale-125">
+                    <h2 class="font-bold text-center pt-10">TOP</h2>
+                   </div>
+                   <!-- regular 3rd img end -->
+                    <!-- regular 4th img start -->
+                    <div class="h-[300px] w-[300px] bg-orange-100 rounded-full mt-5"id="reg">
+                      <img src="./photo/regular5.png" alt="" class="h-[200px] w-[230px] pl-5 hover:scale-125">
+                      <h2 class="font-bold text-center pt-5">SHOE</h2>
+                     </div>
+                   <!-- regular 4th img end -->
+                  </div>
+                 
+
+                 <!-- 1 part div end -->
+
+                 <!-- 2 part div start -->
+                  
+                   <div>
+                     <!-- regular 5th img  -->
+                     <div class="h-[300px] w-[300px] bg-amber-100 rounded-full"id="reg">
+                      <img src="./photo/regular6.png" alt="" class="h-[250px] w-[300px] pl-5 hover:scale-125">
+                      <h2 class="font-bold text-center">SHOE</h2>
+                     </div>
+                    <!-- regular 5th img end -->
+                     <!-- regular 6 img strat -->
+                     <div class="h-[300px] w-[300px] bg-lime-100 rounded-full mt-5"id="reg">
+                      <img src="./photo/shirt1.png" alt="" class="h-[200px] w-[230px] pl-10 pt-10 hover:scale-150" >
+                      <h2 class="font-bold text-center pt-10">SHIRT</h2>
+                     </div>
+                    <!--  regular 6 img end-->
+                   </div>
+
+
+                    <div>
+                       <!-- regular 7 img strat -->
+                     <div class="h-[300px] w-[300px] bg-purple-100 rounded-full"id="reg">
+                      <img src="./photo/regular7.png" alt="" class="h-[250px] w-[250px] pl-5 hover:scale-125">
+                      <h2 class="font-bold text-center pt-5">EYESHADOW</h2>
+                     </div>
+                    <!--  regular 7 img end-->
+                      <!-- regular 8 img start -->
+                      <div class="h-[300px] w-[300px] bg-pink-100 rounded-full mt-5"id="reg">
+                        <img src="./photo/bag2-removebg-preview.png" alt="" class="h-[210px] w-[230px] pl-10 pb-[30px] hover:scale-150">
+                        <h2 class="font-bold text-center pt-10">BAG</h2>
+                       </div>
+                    <!-- regular 8 img end -->
+
+                    </div>
+                  
+                  <!-- 2 part div end -->
+               </div>
+              <!-- regular product section end -->
+
+              </div>
+
+
+              <!-- blog part start -->
+               <div>
+                <!-- title part start -->
+                <div class="title flex items-center justify-center py-6">
+                  <div class="flex w-[400px] flex-col ">
+                    <div class="card  grid h-20 place-items-center">
+                      <h1 class="text-3xl font-bold">Latest Blog</h1>
+                    </div>
+                    <div class="divider"></div>
+                    
+                  </div>
+                </div>
+                 <!-- title end -->
+                 <div class="flex flex-col lg:flex-row justify-around gap-8 py-10 mr-[20px]">
+                  <!-- blog 1 div -->
+                  <div class="flex gap-5 flex-col">
+                     <!-- 1 blog -->
+                   <div class="card card-side w-[550px] shadow-2xl h-[450px] ">
+                    <div class="h-[400px] w-[300px]">
+                      <figure class="">
+                        <img
+                          src="./photo/discount-bag.jpg"
+                          alt="Album" class="h-[400px] w-[350px]"/>
+                      </figure>
+                    </div>
+                    <div class="card-body w-52">
+                      <h2 class="card-title font-bold text-orange-600">New Blog released!</h2>
+                      <p>Click the button to view latest bag . Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate amet repellendus doloremque enim, quam beatae blanditiis maiores magnam voluptas quis?</p>
+                      
+                      <div class="card-actions justify-end">
+                        <button class="btn btn-warning">View</button>
+                      </div>
+                    </div>
+                  </div>
+                   <!-- 2 blog -->
+                   <div class="card card-side w-[550px] shadow-2xl h-[450px] ">
+                    <div class="h-[400px] w-[300px]">
+                      <figure class="">
+                        <img
+                          src="./photo/discount-shoes.jpg"
+                          alt="Album" class="h-[400px] w-[350px]"/>
+                      </figure>
+                    </div>
+                    <div class="card-body w-52">
+                      <h2 class="card-title font-bold text-orange-600">New Blog released!</h2>
+                      <p>Click the button to view latest bag . Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate amet repellendus doloremque enim, quam beatae blanditiis maiores magnam voluptas quis?</p>
+                      
+                      <div class="card-actions justify-end">
+                        <button class="btn btn-warning">View</button>
+                      </div>
+                    </div>
+                  </div>
+
+                  </div>
+                 
+                   <!-- blog 1 div end -->
+                   <!-- blog 2 div sTART -->
+                    <div class="flex gap-5 flex-col" >
+                       <!-- 3 blog -->
+                       <div class="card card-side w-[550px] shadow-2xl h-[450px] ">
+                        <div class="h-[400px] w-[300px]">
+                          <figure class="">
+                            <img
+                              src="./photo/discount-makeup.jpg"
+                              alt="Album" class="h-[400px] w-[350px]"/>
+                          </figure>
+                        </div>
+                        <div class="card-body w-52">
+                          <h2 class="card-title font-bold text-orange-600">New Blog released!</h2>
+                          <p>Click the button to view latest bag . Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate amet repellendus doloremque enim, quam beatae blanditiis maiores magnam voluptas quis?</p>
+                          
+                          <div class="card-actions justify-end">
+                            <button class="btn btn-warning">View</button>
+                          </div>
+                        </div>
+                      </div>
+
+                    <!-- 4 blog -->
+                    <div class="card card-side w-[550px] shadow-2xl h-[450px]  ">
+                      <div class="h-[400px] w-[300px]">
+                        <figure class="">
+                          <img
+                            src="./photo/watch4.jpg"
+                            alt="Album" class="h-[400px] w-[350px]"/>
+                        </figure>
+                      </div>
+                      <div class="card-body w-52">
+                        <h2 class="card-title font-bold text-orange-600">New Blog released!</h2>
+                        <p>Click the button to view latest bag . Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate amet repellendus doloremque enim, quam beatae blanditiis maiores magnam voluptas quis?</p>
+                        
+                        <div class="card-actions justify-end">
+                          <button class="btn btn-warning">View</button>
+                        </div>
+                      </div>
+                    </div>
+                    
+                     <!-- end -->
+                    </div>
+                   <!-- blog 2 div END -->
+                 </div>
+                 
+               
+              </div>
+               <!-- blog part end -->
+
+
+           <!-- service -->
+            <section>
+                  <!-- service part stat -->
+                  <div>
+                    <!-- 1 div -->
+                     <div class="flex flex-col lg:flex-row justify-center gap-10 py-10 items-center">
+                      <!-- 1st servise -->
+                       <div class="h-[180px] w-[230px] border-dashed border-2 border-black bg-amber-100  justify-center text-center">
+                        <i class="fa-solid fa-sack-dollar pt-10 "></i>
+                        <h3 class="pt-3 ">MONEY BACK GURANTEE</h3>
+                        <P class="pt-3 ">Shall open divide a one</P>
+                       </div>
+                       <!-- 1st servise -->
+                        <!--2nd service stat -->
+                        <div class="h-[180px] w-[230px] border-dashed border-2 border-black bg-amber-100 justify-center text-center">
+                          <i class="fa-solid fa-truck pt-10"></i>
+                          <h3 class="pt-3 pl-6">FREE DELIVARY</h3>
+                          <P class="pt-3 pl-6">Shall open divide a one</P>
+                         </div>
+                       <!--2nd service end -->
+  
+                       <!-- 3rd service -->
+                       <div class="h-[180px] w-[230px] border-dashed border-2 border-black bg-amber-100 justify-center text-center">
+                        <i class="fa-solid fa-headphones-simple pt-10"></i>
+                        <h3 class="pt-3 pl-6">ALWAYS SUPPORT</h3>
+                        <P class="pt-3 pl-6">Shall open divide a one</P>
+                       </div>
+                       <!-- 3rd service end -->
+  
+  
+                     </div>
+                     <!-- 1 div end -->
+  
+                    
+                  </div>
+                  <!-- service part end -->
+            </section>
+            <!-- service end -->
+             <!-- contact part -->
+
+             
+             <section>
+               <!-- contact title part -->
+               <div class="title flex items-center justify-center py-6">
+                <div class="flex w-[400px] flex-col ">
+                  <div class="card  grid h-20 place-items-center">
+                    <h1 class="text-3xl font-bold">Contact Us</h1>
+                  </div>
+                  <div class="divider"></div>
+                  
+                </div>
+              </div>
+               <!-- title end -->
+
+            <!-- contact informatin -->
+             <div class="flex justify-center   border-box mt-3">
+              
+
+
+              <div class="h-[400px] w-[500px] flex flex-col  justify-center items-center  gap-6  bg-slate-100 shadow-2xl ">
+                <!-- 1st div -->
+                 <div>
+                  <label class="input input-bordered flex items-center gap-10">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 16 16"
+                      fill="currentColor"
+                      class="h-4 w-4 opacity-70">
+                      <path
+                        d="M2.5 3A1.5 1.5 0 0 0 1 4.5v.793c.026.009.051.02.076.032L7.674 8.51c.206.1.446.1.652 0l6.598-3.185A.755.755 0 0 1 15 5.293V4.5A1.5 1.5 0 0 0 13.5 3h-11Z" />
+                      <path
+                        d="M15 6.954 8.978 9.86a2.25 2.25 0 0 1-1.956 0L1 6.954V11.5A1.5 1.5 0 0 0 2.5 13h11a1.5 1.5 0 0 0 1.5-1.5V6.954Z" />
+                    </svg>
+                    <input type="text" class="grow " placeholder="Email" />
+                  </label>
+                 </div>
+                 <!-- 1st end -->
+                  <!--2nd div   -->
+                  <div>
+                    <label class="input input-bordered flex items-center gap-10">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 16 16"
+                        fill="currentColor"
+                        class="h-4 w-4 opacity-70">
+                        <path
+                          d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6ZM12.735 14c.618 0 1.093-.561.872-1.139a6.002 6.002 0 0 0-11.215 0c-.22.578.254 1.139.872 1.139h9.47Z" />
+                      </svg>
+                      <input type="text" class="grow" placeholder="Username" />
+                    </label>
+                  </div>
+                 <!-- 2nd div end -->
+                <!-- 3rd div start -->
+                <div>
+                  <label class="input input-bordered flex items-center gap-10">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 16 16"
+                      fill="currentColor"
+                      class="h-4 w-4 opacity-70">
+                      <path
+                      fill-rule="evenodd"
+                        d="M14 6a4 4 0 0 1-4.899 3.899l-1.955 1.955a.5.5 0 0 1-.353.146H5v1.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-2.293a.5.5 0 0 1 .146-.353l3.955-3.955A4 4 0 1 1 14 6Zm-4-2a.75.75 0 0 0 0 1.5.5.5 0 0 1 .5.5.75.75 0 0 0 1.5 0 2 2 0 0 0-2-2Z"
+                        clip-rule="evenodd" />
+                    </svg>
+                    <input type="password" class="grow" value="password" />
+                  </label>
+                </div>
+                <!-- 3rd div end -->
+
+                <label>
+                  <textarea class="textarea textarea-primary textarea-bordered textarea-xs " placeholder="Enter your message"></textarea>
+                </label>
+       
+              </div>
+            </div>
+             </section>
+              <!-- contact end -->
+
+
+
+               <!-- lode section -->
+                <div class="flex justify-center mt-8">
+                  <div class="indicator">
+                    
+                    <button class="btn btn-outline btn-info">Load More</button>
+                  </div>
+                </div>
+              <!-- lode section -->
+
+
+
+     </main>
+     <!-- main part end-->
+
+     <!-- footer part start -->
+      <footer>
+        <!-- start -->
+         <section class="bg-slate-400 mt-8">
+          <!-- 1st div -->
+           <div>
+            <!-- 1st imput type -->
+             <div>
+              <div class="footer bg-slate-400 text-neutral-content p-10">
+                <nav>
+                  <h6 class="footer-title text-xl text-black">Customer Care</h6>
+                  <a class="link link-hover text-black">Help Center</a>
+                  <a class="link link-hover text-black">How to buy</a>
+                  <a class="link link-hover text-black">Returns & Refunds</a>
+                  <a class="link link-hover text-black">Terms & condition</a>
+                </nav>
+                <nav>
+                  <h6 class="footer-title text-xl text-black">StyleSphere</h6>
+                  <a class="link link-hover text-black">About StyleSphere</a>
+                  <a class="link link-hover text-black">Digital payment</a>
+                  <a class="link link-hover text-black">StyleSphere Card</a>
+                  <a class="link link-hover text-black">StyleSphere Blog</a>
+                  <a class="link link-hover text-black">StyleSphere Mart</a>
+                  <a class="link link-hover text-black">Privacy policy</a>
+                </nav>
+                <nav>
+                  <h6 class="footer-title text-xl text-black">Payment Methods</h6>
+                  <a class="link link-hover"><img src="./photo/bkash.svg" alt="bkash" class="h-[60px] w-[60px]"></a>
+                  <a class="link link-hover"><img src="./photo/visa-10.svg" alt="visa" class="h-[60px] w-[60px]"></a>
+                  <a class="link link-hover"><img src="./photo/american-express-card-2.svg" alt="american-express-card-2" class="h-[60px] w-[60px]"></a>
+                </nav>
+               
+              </div>
+              <div class="divider"></div>
+
+             </div>
+             <!-- end footer -->
+              
+           </div>
+           <!-- 2nd footer start -->
+            <div>
+              <div class="footer bg-slate-400 text-neutral-content items-center p-4">
+                <aside class="grid-flow-col items-center text-black">
+                  <p>Copyright ©2025 - All right reserved</p>
+                </aside>
+                <nav class="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
+                  
+                  <a>
+                    <i class="fa-brands fa-square-twitter text-2xl text-black"></i>
+                  </a>
+                  <a>
+                    <i class="fa-brands fa-facebook text-2xl text-black"></i>
+                  </a>
+                  <a>
+                    <i class="fa-brands fa-instagram text-2xl text-black"></i>
+                  </a>
+                  <a>
+                    <i class="fa-brands fa-youtube text-2xl text-black"></i>
+                  </a>
+                </nav>
+              </div>
+            </div>
+            <!-- 2nd footer end -->
+           
+         </section>
+         <!-- end -->
+
+      </footer>
+      <!-- footer part end -->
+
+
+      <!-- java script part start -->
+
+
+      <script>
+
+        function startTime() {
+          const today = new Date();
+          let h = today.getHours();
+          let m = today.getMinutes();
+          let s = today.getSeconds();
+          h = checkTime(h);
+          m = checkTime(m);
+          s = checkTime(s);
+          document.getElementById('clock').innerHTML =  h + ":" + m + ":" + s;
+          setTimeout(startTime, 1000);
+        }
+        
+        function checkTime(i) {
+          if (i < 10) {i = '0' + i};  // add zero in front of numbers < 10
+          return i;
+        }
+        </script>
+    
+</body>
+</html>
